@@ -1,0 +1,182 @@
+---
+title: |
+    Potenziale und Herausforderungen von Open-Source-KI
+subtitle: Workshop in der Reihe "Was kann KI in der Schule?"
+lang: de
+author:
+    - name: Axel Dürkop
+      attributes:
+        corresponding: true
+      orcid: 0000-0002-8154-8988
+      email: me@axel-duerkop.de
+date: 07. May 2024
+date-format: full
+format: 
+    revealjs:
+        footer: "Axel Dürkop für das NLQ im DIGILAB MZ Harburg und im Stream am 7. Mai 2024"
+        slide-number: c/t
+        show-slide-number: all
+        theme: [default, assets/scss/my-theme.scss]
+        title-slide-attributes:
+          data-background-image: "./assets/img/greg-rakozy-oMpAz-DN-9I-unsplash.jpg"
+          data-background-size: cover
+          data-background-opacity: ".9"
+    html:
+        toc: true
+        toc-title: Auf dieser Seite
+title-block-banner: true
+bibliography: ./refs.bib
+csl: apa.csl
+reference-section-title: Referenzen
+link-external-icon: true
+link-external-newwindow: true
+---
+
+# Zentrale Fragen {background-image="./assets/img/ricardo-arce-cY_TCKr5bek-unsplash.jpg"}
+
+- Mit welchen Anwendungen können wir aktuelle KI-Systeme verstehen lernen?
+- Wo liegen Potenziale und Herausforderungen von Open-Source-KI*?
+- Welche (fächerübergreifenden) Lernsituationen fallen uns ein?
+
+# Agenda
+
+- Problematik des Begriffs *Open-Source-KI* [@gentTechIndustryCan2024]
+- Problematik des Begriffs *Künstliche Intelligenz* [@kirsteEinleitungEntwicklungswegeZur2019]
+- Verständnis von Open-Source in diesem Workshop
+- Überblick über lernhaltige Open-Source-KI*-Anwendungen
+- Praktische Beispiele (hands-on)
+- Reflexion, Entwicklung didaktischer Ideen
+
+# Etherpad
+
+Sie finden ein Etherpad unter folgender Adresse:
+
+<https://das-etherpad.de>
+
+# Wie lernen Maschinen? {background-color="#1c2d3f"}
+
+## Daten sammeln
+
+:::: columns
+::: {.column width='34%'}
+![Quelle: Valentina Ivanova auf [Unsplash](https://unsplash.com/de/fotos/mkhohyHMhcc)](./assets/img/valentina-ivanova-mkhohyHMhcc-unsplash.jpg)
+:::
+::: {.column width='65%'}
+- Die "Zutaten" für KI-Systeme sind **Big Data**
+- Daten stammen aus dem Internet sowie öffentlichen und privaten Datenpools
+- bei der Auswahl von Daten ist auf Ausgewogenheit zu achten, um **bias** zu vermeiden
+- Die **Urheberrechtslage** ist komplex
+- **Datenschutzaspekte** können zu Buche schlagen
+:::
+::::
+
+## Daten aufbereiten
+
+::: columns
+::: {.column width="50%"}
+![Quelle: Beispielabb., [labelstud.io](https://labelstud.io/), 22.08.2023](./assets/img/label-studio.avif)
+:::
+
+::: {.column width="50%"}
+-   Daten müssen gesäubert und auf Konsistenz und Plausibilität geprüft werden.
+-   Das kann bei aktuellen Modellen aufgrund ihrer Größe nicht mehr im Vornherein erfolgen.
+-   Besonders für das *überwachte maschinelle Lernen* müssen die Daten vorher **annotiert** bzw. **gelabelt** bzw. **etikettiert** werden.
+:::
+:::
+
+## Modelle trainieren
+
+- Aus den **Daten** werden **Modelle** mithilfe von **Algorithmen** entwickelt.
+- Die Anwendung eines Algorithmus auf die Daten nennt man **Training**.
+- Beim Training findet der "Lernprozess" einer Maschine statt.
+
+## Modelle testen
+
+:::: columns
+::: {.column width='70%'}
+- Beim **Training** werden zunächst 80% der Daten verwendet
+- Die restlichen 20% dann verwendet, um das Modell zu **testen**
+- Anschließend wird das Modell **validiert** und ggf. neu trainiert
+- Gelingt die Validierung, kann das Modell produktiv eingesetzt werden.
+:::
+::: {.column width='29%'}
+![Quelle: Valentina Perez auf [Unsplash](https://unsplash.com/de/fotos/brPY6nMbPgw)](./assets/img/valentina-perez-brPY6nMbPgw-unsplash.jpg)
+:::
+::::
+
+# Teachable Machine  {background-color="#1c2d3f"}
+
+Der folgende Prozess steht stellvertretend auch für die energieintensiven Trainingsprozesse der großen Basismodelle.
+
+## Teachable Machine
+
+Mit der [Teachable Machine](https://teachablemachine.withgoogle.com/) von Google, einer Webcam oder einem Satz Fotos kann **Objektklassifizierung** praktisch ausprobiert werden.
+
+![Quelle: Screenshot [Teachable Machine](https://teachablemachine.withgoogle.com/), Google, 22.01.2023](./assets/img/2023-01-15_11-30.png)
+
+## Teachable Machine - Daten erfassen
+
+![Quelle: Screenshot [Teachable Machine](https://teachablemachine.withgoogle.com/), Google, 01.05.2024](./assets/img/screenshot-teachable-machine-1.png)
+
+## Teachable Machine - Modell trainieren
+
+![Quelle: Screenshot Teachable Machine, Google, 22.01.2023](./assets/img/screenshot-teachable-machine-2.png)
+
+## Teachable Machine - Modell validieren
+
+![](./assets/img/screenshot-teachable-machine-3.png)
+
+## Teachable Machine - Modell exportieren
+
+Das trainierte Modell kann für die weitere Verwendung exportiert werden.
+
+![Quelle: Screenshot Teachable Machine, Google, 01.05.2024](./assets/img/screenshot-teachable-machine-4.png)
+
+
+# The Hugging Face {background-color="#1c2d3f"}
+
+## Modell auf Hugging Face
+
+![Quelle: Screenshot [Hugging Face](https://huggingface.co/xldrkp/cats_vs_dogs_teachable_machine/tree/main), 01.05.2024](./assets/img/screenshot-hf-model.png)
+
+
+## Datensatz von Hugging Face
+
+:::: {.columns}
+::: {.column}
+![Screenshot der Website The Hugging Face, 29.01.24, Ausschnitt](./assets/img/2024-01-28-hf.png)
+:::
+::: {.column}
+The Hugging Face ist aktuell die zentrale Webplattform für frei zugängliche KI-Modelle und -Datensätze.
+
+- [Datensatz Cats vs. Dogs](https://huggingface.co/datasets/cats_vs_dogs)
+
+:::
+::::
+
+# Kontakt {background-image="./assets/img/sid-suratia-ZSmW-VJCz3Q-unsplash_.jpg"}
+
+> <https://axel-duerkop.de>\
+> [me\@axel-duerkop.de](mailto:me@axel-duerkop.de){.email}\
+> [\@xldrkp\@scholar.social](https://scholar.social/@xldrkp)
+
+## Mediennachweis
+
+- "Titel Sternenhimmel": Foto von <a href="https://unsplash.com/de/@grakozy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Greg Rakozy</a> auf <a href="https://unsplash.com/de/fotos/silhouettenfotografie-der-person-oMpAz-DN-9I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- "Dart": Foto von <a href="https://unsplash.com/de/@jrarce?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ricardo Arce</a> auf <a href="https://unsplash.com/de/fotos/selektive-fokusfotografie-eines-pfeils-cY_TCKr5bek?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- "Nebula Head" auf "Was ist KI?": DALL-E 2, " artificial intelligence in the implosion of a nebula, watercolor, dark background"
+- "Entwicklungsprozesse von KI-Systemen": Photo by <a href="https://unsplash.com/@eaterscollective?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eaters Collective</a> on <a href="https://unsplash.com/photos/four-macarons-balancing-near-two-and-one-macarons-rS1GogPLVHk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- "Generative KI-Systeme": Photo by <a href="https://unsplash.com/@mikepetrucci?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Petrucci</a> on <a href="https://unsplash.com/photos/mixed-paints-in-a-plate-f6Xv0xs9JWg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- "Trends": Foto von <a href="https://unsplash.com/de/@jacksloop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jack Sloop</a> auf <a href="https://unsplash.com/de/fotos/mann-klettert-tagsuber-auf-turm-in-der-nahe-von-gebauden-eYwn81sPkJ8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- "Fazit und Ausblick": Photo by <a href="https://unsplash.com/@patrickperkins?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Perkins</a> on <a href="https://unsplash.com/photos/tower-viewer-mtqW8XxkDa8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- "Sternenhimmel in Orange" auf "Kontakt", Foto von <a href="https://unsplash.com/de/@sid_suratia">Sid Suratia</a> auf <a href="https://unsplash.com/de/fotos/ZSmW-VJCz3Q">Unsplash</a>
+
+## Nachnutzung
+
+<img alt="Creative Commons Lizenzvertrag" style="width: 200px; border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+
+Dieses Werk ist lizenziert unter einer **Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz**. Diese Lizenz erlaubt unter Voraussetzung der Namensnennung des Urhebers die Bearbeitung, Vervielfältigung und Verbreitung des Materials in jedem Format oder Medium für beliebige Zwecke, auch kommerziell, sofern das neue entstandene Werk unter derselben Lizenz wie das Original verbreitet wird.  
+
+Die Bedingungen der Creative-Commons-Lizenz gelten nur für Originalmaterial. Die Wiederverwendung von Material aus anderen Quellen (gekennzeichnet mit Quellenangabe oder Erwähnung in den Mediennachweisen) wie z.B. Schaubilder, Abbildungen, Fotos und Textauszüge erfordert ggf. weitere Nutzungsgenehmigungen durch den jeweiligen Rechteinhaber.
+
+
