@@ -2,7 +2,7 @@
 
 ## Abstract
 
-Der Workshop im Rahmen der Reihe "Was kann KI in der Schule?" des Niedersächsischen Landesinsituts für schulische Qualitätsentwicklung (NLQ) geht zunächst auf die Problematik des Begriffs *Open-Source-KI* ein und differenziert das Verständnis von *Künstlicher Intelligenz*. Anschließend werden ausgewählte Anwendungen und Ansätze vorgestellt, die das Verständnis von Künstlicher Intelligenz in Bildungszusammenhängen fördern können. 
+Der [Workshop im Rahmen der Reihe "Was kann KI in der Schule?"](https://axel-duerkop.de/talk/2025-05-07-nlq-was-kann-ki-in-der-schule/) des Niedersächsischen Landesinsituts für schulische Qualitätsentwicklung (NLQ) geht zunächst auf die Problematik des Begriffs *Open-Source-KI* ein und differenziert das Verständnis von *Künstlicher Intelligenz*. Anschließend werden ausgewählte Anwendungen und Ansätze vorgestellt, die das Verständnis von Künstlicher Intelligenz in Bildungszusammenhängen fördern können. 
 
 Im Hauptteil des Workshops entwickeln die Teilnehmenden eine exemplarische Anwendung mit Teachable Machine, Gradio und Hugging Face. 
 

@@ -90,19 +90,44 @@ Sie finden ein Etherpad unter folgender Adresse:
 - Die Anwendung eines Algorithmus auf die Daten nennt man **Training**.
 - Beim Training findet der "Lernprozess" einer Maschine statt.
 
-## Modelle testen
+## Modelle evaluieren
 
 :::: columns
 ::: {.column width='70%'}
-- Beim **Training** werden zunächst 80% der Daten verwendet
+- Beim **Training** werden in der Regel 80% der Daten verwendet
 - Die restlichen 20% dann verwendet, um das Modell zu **testen**
 - Anschließend wird das Modell **validiert** und ggf. neu trainiert
 - Gelingt die Validierung, kann das Modell produktiv eingesetzt werden.
+- Anschließend erfolgt eine weitere Stufe der Evaluation, oft durch Interaktion mit der Zielgruppe
 :::
 ::: {.column width='29%'}
 ![Quelle: Valentina Perez auf [Unsplash](https://unsplash.com/de/fotos/brPY6nMbPgw)](./assets/img/valentina-perez-brPY6nMbPgw-unsplash.jpg)
 :::
 ::::
+
+## Anwendungen entwickeln
+
+- Modelle brauchen Schnittstellen für die Mensch-Maschine- oder Maschine-Maschine-Interaktion
+
+
+# KI verstehen mit Open-Source-Software {background-color="#1c2d3f"}
+
+## Eine Auswahl
+
+**Welche Tools fördern das Verständnis für KI in sozialen Settings?**
+
+| | |
+|-----|-|
+| [**Label Studio**](https://labelstud.io/)    | (kollaborative) Bearbeitung von Trainingsdaten | 
+| [**spaCy**](https://spacy.io/)          | Python-Bibliothek für Natural Language Processing (NLP) | 
+| [**ml5.js**](https://ml5js.org/)          | ML-/DL-Modelle mit [p5.js](https://p5js.org/) im Browser zu nutzen. | 
+| [**Teachable Machine**](https://teachablemachine.withgoogle.com/) | webbasiertes Tool, um Modelle zu trainieren. | 
+| [**PoseBlocks**](https://playground.raise.mit.edu/create/)    | Scratch-basierte Umgebung für KI-Anwendungen | 
+| [**Jan.ai**](https://www.jan.ai/)          | LLMs offline verwenden  | 
+| [**Ollama**](https://ollama.com/)          | LLMs offline verwenden  | 
+| [**Jupyter Notebook**](https://jupyter.org/) | Entwicklungsumgebung im Browser | 
+| [**Gradio**](https://www.gradio.app/)          | Python-Bibliothek für interaktive KI-Interfaces | 
+| [**Hugging Face**](https://huggingface.co/)    | Plattform für Daten, Modelle und Anwendungen | 
 
 # Teachable Machine  {background-color="#1c2d3f"}
 
