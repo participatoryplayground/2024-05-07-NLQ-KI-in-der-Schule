@@ -1,11 +1,12 @@
 # Künstliche Intelligenz
 
-![](assets/img/featured.png)
-Hintergrundbild: "an artificial intelligence on top of a hill overseeing mankind, steampunk style", generiert von Axel Dürkop mit DALL-E 2 am 24.11.2022.
-
 ## Abstract
 
-Der Vortrag soll zunächst einen Überblick über die gängigen informatischen Methoden aktueller Modelle Künstlicher Intelligenz (KI) geben. Anschließend können an ausgewählten Beispielen Potenziale und ethische Herausforderungen von KI aufgezeigt und ausprobiert werden. 
+Der Workshop im Rahmen der Reihe "Was kann KI in der Schule?" des Niedersächsischen Landesinsituts für schulische Qualitätsentwicklung (NLQ) geht zunächst auf die Problematik des Begriffs *Open-Source-KI* ein und differenziert das Verständnis von *Künstlicher Intelligenz*. Anschließend werden ausgewählte Anwendungen und Ansätze vorgestellt, die das Verständnis von Künstlicher Intelligenz in Bildungszusammenhängen fördern können. 
+
+Im Hauptteil des Workshops entwickeln die Teilnehmenden eine exemplarische Anwendung mit Teachable Machine, Gradio und Hugging Face. 
+
+Den Abschluss bildet die Diskussion über Potenziale und Herausforderungen von quelloffenen und frei zugänglichen Daten, Modelle und Softwarebestandteilen im KI-Zusammenhang. Fächerübergreifende didaktische Lernsituationen, ethische und gesellschaftspolitisch relevante Aspekte stehen dabei im Mittelpunkt des Interesses.
 
 ## Präsentation herunterladen
 
@@ -23,4 +24,6 @@ Alles Weitere ist [der Dokumentation von Quarto zu Präsenationen mit RevealJS](
 
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />Dieses Werk ist lizenziert unter einer <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Namensnennung - Weitergabe unter gleichen Bedingungen 4.0 International Lizenz</a>. Diese Lizenz erlaubt unter Voraussetzung der Namensnennung des Urhebers die Bearbeitung, Vervielfältigung und Verbreitung des Materials in jedem Format oder Medium für beliebige Zwecke, auch kommerziell, sofern das neue entstandene Werk unter derselben Lizenz wie das Original verbreitet wird.
 
-Die Bedingungen der Creative-Commons-Lizenz gelten nur für Originalmaterial. Die Wiederverwendung von Material aus anderen Quellen (gekennzeichnet mit Quellenangabe) wie z.B. Schaubilder, Abbildungen, Fotos und Textauszüge erfordert ggf. weitere Nutzungsgenehmigungen durch den jeweiligen Rechteinhaber.
+Die Bedingungen der Creative-Commons-Lizenz gelten nur für Originalmaterial. Die Wiederverwendung von Material aus anderen Quellen (gekennzeichnet mit Quellenangabe oder Erwähnung in den Mediennachweisen) wie z.B. Schaubilder, Abbildungen, Fotos und Textauszüge erfordert ggf. weitere Nutzungsgenehmigungen durch den jeweiligen Rechteinhaber.
+
+
