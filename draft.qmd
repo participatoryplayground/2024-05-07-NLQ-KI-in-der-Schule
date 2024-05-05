@@ -34,23 +34,30 @@ link-external-newwindow: true
 
 # Zentrale Fragen {background-image="./assets/img/ricardo-arce-cY_TCKr5bek-unsplash.jpg"}
 
-- Mit welchen Anwendungen können wir aktuelle KI-Systeme verstehen lernen?
-- Wo liegen Potenziale und Herausforderungen von Open-Source-KI*?
-- Welche (fächerübergreifenden) Lernsituationen fallen uns ein?
+:::: columns
+::: {.column width='70%'}
+- Wo liegen Potenziale und Herausforderungen von Open-Source-KI?
+- Mit welchen Anwendungen können wir KI-Systeme verstehen lernen?
+- Diskussion: Welche (fächerübergreifenden) Lernsituationen fallen uns ein?
+:::
+::: {.column}
+:::
+
+::::
+
 
 # Agenda
 
 - Problematisierung *Künstliche Intelligenz* und *Open-Source-KI*
-- Verständnis von Open-Source in diesem Workshop
 - Überblick über lernhaltige Open-Source-KI*-Anwendungen
-- Praktische Beispiele (hands-on)
-- Reflexion, Entwicklung didaktischer Ideen
+- Praktisches Beispiel (hands-on)
+- Reflexion, Diskussion und Entwicklung didaktischer Ideen
 
 # Etherpad
 
 Sie finden ein Etherpad unter folgender Adresse:
 
-<https://das-etherpad.de>
+<https://m1z.eu/kischule1>
 
 # Künstliche Intelligenz {background-color="#1c2d3f"}
 
@@ -164,10 +171,13 @@ Gibt es Open-Source-KI?
 |5| [**LangChain**](https://python.langchain.com/docs/get_started/introduction/)    | Python-Bibliothek für LLM-Apps | 
 |**1-5**| [**Hugging Face**](https://huggingface.co/)    | Plattform für Daten, Modelle und Anwendungen | 
 
-<p class="legende">Legende: 1) Daten sammeln, 2) Daten aufbereiten, 3) Modelle trainieren, 4) Anwendungen entwickeln, 5) Modelle evaluieren </p>
+::: aside
+Legende: 1) Daten sammeln, 2) Daten aufbereiten, 3) Modelle trainieren, 4) Anwendungen entwickeln, 5) Modelle evaluieren
+
+:::
 
 [^2]: Weit verbreitet ist auch [Google Colab](https://colab.research.google.com/), das allerdings datenschutzmäßig kritisch und nicht quelloffen ist, jedoch kostenlose GPU-Rechenzeit zur Verfügung stellt.
-[^3]: [scikit-learn](https://scikit-learn.org/stable/), [Tensorflow](https://www.tensorflow.org/) und [Pytorch](https://pytorch.org/) sind ebenfalls quelloffen und zentral für die offene KI-Entwicklung, bieten sich aber nicht unbedingt für soziale Lernsituationen an.
+[^3]: [scikit-learn](https://scikit-learn.org/stable/), [Tensorflow](https://www.tensorflow.org/) und [PyTorch](https://pytorch.org/) sind ebenfalls quelloffen und zentral für die offene KI-Entwicklung, bieten sich aber nicht unbedingt für soziale Lernsituationen an.
 
 # Teachable Machine  {background-color="#1c2d3f"}
 
@@ -200,12 +210,22 @@ Das trainierte Modell kann für die weitere Verwendung exportiert werden.
 
 # The Hugging Face {background-color="#1c2d3f"}
 
-## Modell auf Hugging Face
+## Ein Rundgang
+
+HF wurde 2016 gegründet und hat sich der offenen Entwicklung von KI-Systemen verschrieben.
+
+- Datensätze
+- Modelle mit Git-basierter Versionskontrolle
+- Quellcode in Form von Bibliotheken (z. B. *transformers*)
+- "Spaces" (virtuelle Maschinen zum Hosten von Anwendungsprototypen)
+- Lernmaterial
+- Publikationen
+
+## Unser Modell auf Hugging Face
 
 ![Quelle: Screenshot [Hugging Face](https://huggingface.co/xldrkp/cats_vs_dogs_teachable_machine/tree/main), 01.05.2024](./assets/img/screenshot-hf-model.png)
 
-
-## Datensatz von Hugging Face
+## Unser Datensatz auf Hugging Face
 
 :::: {.columns}
 ::: {.column}
@@ -214,10 +234,26 @@ Das trainierte Modell kann für die weitere Verwendung exportiert werden.
 ::: {.column}
 The Hugging Face ist aktuell die zentrale Webplattform für frei zugängliche KI-Modelle und -Datensätze.
 
-- [Datensatz Cats vs. Dogs](https://huggingface.co/datasets/cats_vs_dogs)
+- [Datensatz Cats vs. Dogs](https://huggingface.co/datasets/cats_vs_dogs)[^1]
 
 :::
 ::::
+
+[^1]: In unserem Beispiel ist der Umfang des Datensatzes auf 100 Bilder pro Kategorie reduziert, um das Datenvolumen gering zu halten.
+
+# Anwendungsentwicklung am Beispiel von Gradio {background-color="#1c2e3f"}
+
+## Gradio
+
+- [Gradio](https://gradio.app) auf Basis von Python
+- schnelle Browser-Interface-Entwicklung für Machine-Learning-Anwendungen
+- funktioniert gut mit Hugging Face zusammen
+- sehr gut dokumentiert und mit Beispielen und Demos versehen
+
+**Wir bauen ein Interface für die Unterscheidung von Hunden und Katzen.**
+
+- Verbindung von Teachable Machine mit Gradio
+- Analyse der Anwendung und Vergleich mit den "Großen"
 
 # Kontakt {background-image="./assets/img/sid-suratia-ZSmW-VJCz3Q-unsplash_.jpg"}
 
