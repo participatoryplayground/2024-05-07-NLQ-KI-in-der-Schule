@@ -40,8 +40,7 @@ link-external-newwindow: true
 
 # Agenda
 
-- Problematik des Begriffs *Open-Source-KI* [@gentTechIndustryCan2024]
-- Problematik des Begriffs *Künstliche Intelligenz* [@kirsteEinleitungEntwicklungswegeZur2019]
+- Problematisierung *Künstliche Intelligenz* und *Open-Source-KI*
 - Verständnis von Open-Source in diesem Workshop
 - Überblick über lernhaltige Open-Source-KI*-Anwendungen
 - Praktische Beispiele (hands-on)
@@ -53,9 +52,16 @@ Sie finden ein Etherpad unter folgender Adresse:
 
 <https://das-etherpad.de>
 
-# Wie lernen Maschinen? {background-color="#1c2d3f"}
+# Künstliche Intelligenz {background-color="#1c2d3f"}
 
-## Daten sammeln
+## Entwicklungsgeschichte 
+
+![Methoden der KI [@kirsteEinleitungEntwicklungswegeZur2019, S. 22]](assets/img/kirste-entwicklung.png)
+
+# Open-Source-KI {background-color="#1c2d3f"}
+Wie lernen Maschinen?
+
+## (1) Daten sammeln
 
 :::: columns
 ::: {.column width='34%'}
@@ -67,10 +73,11 @@ Sie finden ein Etherpad unter folgender Adresse:
 - bei der Auswahl von Daten ist auf Ausgewogenheit zu achten, um **bias** zu vermeiden
 - Die **Urheberrechtslage** ist komplex
 - **Datenschutzaspekte** können zu Buche schlagen
+- immer häufiger sind auch **Persönlichkeitsrechte** tangiert
 :::
 ::::
 
-## Daten aufbereiten
+## (2) Daten aufbereiten
 
 ::: columns
 ::: {.column width="50%"}
@@ -80,58 +87,91 @@ Sie finden ein Etherpad unter folgender Adresse:
 ::: {.column width="50%"}
 -   Daten müssen gesäubert und auf Konsistenz und Plausibilität geprüft werden.
 -   Das kann bei aktuellen Modellen aufgrund ihrer Größe nicht mehr im Vornherein erfolgen.
--   Besonders für das *überwachte maschinelle Lernen* müssen die Daten vorher **annotiert** bzw. **gelabelt** bzw. **etikettiert** werden.
+-   Für das *überwachte maschinelle Lernen* müssen die Daten vorher **annotiert** bzw. **gelabelt** bzw. **etikettiert** werden.
 :::
 :::
 
-## Modelle trainieren
+## (3) Modelle (nach)trainieren
 
-- Aus den **Daten** werden **Modelle** mithilfe von **Algorithmen** entwickelt.
+- Aus den **Daten** werden **Modelle** mithilfe von **Algorithmen** (bspw. überwachtes, unüberwachtes oder verstärkendes Lernen) entwickelt.
 - Die Anwendung eines Algorithmus auf die Daten nennt man **Training**.
-- Beim Training findet der "Lernprozess" einer Maschine statt.
+- Beim Training findet der **Lernprozess** einer Maschine statt.
+- Beim **Training** werden in der Regel 80% der Daten verwendet.
+- Die restlichen 20% dann verwendet, um das Modell zu **testen**.
+- Anschließend wird das Modell mit unbekannten Daten **validiert** und ggf. neu trainiert.
+- Gelingt die Validierung, kann das Modell produktiv eingesetzt und von Anwender*innen **evaluiert** werden.
+- Basismodelle können für spezifisches Domänenwissen mit **fine-tuning**, aber auch **Retrieval Augmented Generation (RAG)** erweitert werden.
 
-## Modelle evaluieren
+## (4) Anwendungen entwickeln
+
+:::: columns
+::: {.column width='60%'}
+- Modelle werden in der Regel durch Schnittstellen für die Mensch-Maschine- oder Maschine-Maschine-Interaktion ergänzt
+  - Beispiel: GPT-3.5/4 ist das Modell, ChatGPT die Anwendung
+:::
+
+::: {.column width='40%'}
+![](./assets/img/889px-Commodore_PET2001_.jpg)
+:::
+::::
+
+
+## (5) Modelle evaluieren[^1]
+
+[^1]: Der Begriff Evaluation als "Prüfung für den Einsatzzweck aus Sicht von Anwender\*innen" verstanden und von Validierung als "Prüfung der Performance aus Sicht von Entwickler\*innen" abgegrenzt.
 
 :::: columns
 ::: {.column width='70%'}
-- Beim **Training** werden in der Regel 80% der Daten verwendet
-- Die restlichen 20% dann verwendet, um das Modell zu **testen**
-- Anschließend wird das Modell **validiert** und ggf. neu trainiert
-- Gelingt die Validierung, kann das Modell produktiv eingesetzt werden.
-- Anschließend erfolgt eine weitere Stufe der Evaluation, oft durch Interaktion mit der Zielgruppe
+- Anschließend erfolgt die Evaluation durch Anwender*innen
+- Folge der Evaluation kann sein, dass das Modell nachtrainiert werden muss, um **domänenspezifischen Anforderungen** zu genügen (fine-tuning, RAG), oder es wird ein anderes Modell gewählt
+- In Bildungszusammenhängen ist die Evaluation von Modellen oft nur möglich, wenn entsprechende Interfaces oder Anwendungen zur Verfügung stehen.
 :::
-::: {.column width='29%'}
+::: {.column width='25%'}
 ![Quelle: Valentina Perez auf [Unsplash](https://unsplash.com/de/fotos/brPY6nMbPgw)](./assets/img/valentina-perez-brPY6nMbPgw-unsplash.jpg)
 :::
 ::::
 
-## Anwendungen entwickeln
+# Zwischenfazit {background-color="#1c2d3f"}
 
-- Modelle brauchen Schnittstellen für die Mensch-Maschine- oder Maschine-Maschine-Interaktion
+Gibt es Open-Source-KI?
+
+## KI-Systeme sind komplex
+
+- Open-Source-KI wird großes wirtschaftliches Potenzial zugeschrieben [@thebenChallengesLimitsOpen2021].
+- Anders als bei Open-Source-Software sind viele komplexe Komponenten an der Entwicklung von KI-Systemen beteiligt.
+- **Zugang, Transparenz, Nachvollziehbarkeit und Nachnutzbarkeit** sind bisher noch nicht konsequent für alle Komponenten von "Open-Source-KI" gegeben [@gentTechIndustryCan2024].
+- Für **Bildungs- und Qualifikationsprozesse** bieten aktuelle Zugänge zu Daten und Software schon jetzt großes Potenzial.
 
 
 # KI verstehen mit Open-Source-Software {background-color="#1c2d3f"}
 
 ## Eine Auswahl
 
-**Welche Tools fördern das Verständnis für KI in sozialen Settings?**
+**Welche Tools fördern das Verständnis für KI in sozialen Settings?**[^3]
 
-| | |
-|-----|-|
-| [**Label Studio**](https://labelstud.io/)    | (kollaborative) Bearbeitung von Trainingsdaten | 
-| [**spaCy**](https://spacy.io/)          | Python-Bibliothek für Natural Language Processing (NLP) | 
-| [**ml5.js**](https://ml5js.org/)          | ML-/DL-Modelle mit [p5.js](https://p5js.org/) im Browser zu nutzen. | 
-| [**Teachable Machine**](https://teachablemachine.withgoogle.com/) | webbasiertes Tool, um Modelle zu trainieren. | 
-| [**PoseBlocks**](https://playground.raise.mit.edu/create/)    | Scratch-basierte Umgebung für KI-Anwendungen | 
-| [**Jan.ai**](https://www.jan.ai/)          | LLMs offline verwenden  | 
-| [**Ollama**](https://ollama.com/)          | LLMs offline verwenden  | 
-| [**Jupyter Notebook**](https://jupyter.org/) | Entwicklungsumgebung im Browser | 
-| [**Gradio**](https://www.gradio.app/)          | Python-Bibliothek für interaktive KI-Interfaces | 
-| [**Hugging Face**](https://huggingface.co/)    | Plattform für Daten, Modelle und Anwendungen | 
+| | | |
+|-|-----|-|
+|2,3,4| [**Jupyter Notebook**](https://jupyter.org/) | Entwicklungsumgebung im Browser[^2] | 
+|4| [**MediaPipe**](https://developers.google.com/mediapipe) | offene Bibliotheken für div. KI-Anwendungen | 
+|1,2| [**Label Studio**](https://labelstud.io/)    | (kollaborative) Bearbeitung von Trainingsdaten | 
+|2,3,4| [**spaCy**](https://spacy.io/)          | Python-Bibliothek für Natural Language Processing (NLP) | 
+|**3**| [**Teachable Machine**](https://teachablemachine.withgoogle.com/) | webbasiertes Tool, um Modelle zu trainieren | 
+|2,3,5| [**ml5.js**](https://ml5js.org/)          | ML-/DL-Modelle mit [p5.js](https://p5js.org/) im Browser zu nutzen | 
+|4,5| [**Jan.ai**](https://www.jan.ai/)          | LLMs offline verwenden und vergleichen | 
+|4,5| [**Ollama**](https://ollama.com/)          | LLMs offline verwenden und vergleichen | 
+|5| [**PoseBlocks**](https://playground.raise.mit.edu/create/)    | Scratch-basierte Umgebung für KI-Anwendungen | 
+|**4,5**| [**Gradio**](https://www.gradio.app/)          | Python-Bibliothek für interaktive KI-Interfaces | 
+|5| [**LangChain**](https://python.langchain.com/docs/get_started/introduction/)    | Python-Bibliothek für LLM-Apps | 
+|**1-5**| [**Hugging Face**](https://huggingface.co/)    | Plattform für Daten, Modelle und Anwendungen | 
+
+<p class="legende">Legende: 1) Daten sammeln, 2) Daten aufbereiten, 3) Modelle trainieren, 4) Anwendungen entwickeln, 5) Modelle evaluieren </p>
+
+[^2]: Weit verbreitet ist auch [Google Colab](https://colab.research.google.com/), das allerdings datenschutzmäßig kritisch und nicht quelloffen ist, jedoch kostenlose GPU-Rechenzeit zur Verfügung stellt.
+[^3]: [scikit-learn](https://scikit-learn.org/stable/), [Tensorflow](https://www.tensorflow.org/) und [Pytorch](https://pytorch.org/) sind ebenfalls quelloffen und zentral für die offene KI-Entwicklung, bieten sich aber nicht unbedingt für soziale Lernsituationen an.
 
 # Teachable Machine  {background-color="#1c2d3f"}
 
-Der folgende Prozess steht stellvertretend auch für die energieintensiven Trainingsprozesse der großen Basismodelle.
+Der folgende Prozess steht stellvertretend auch für die Trainingsprozesse großer Basismodelle.
 
 ## Teachable Machine
 
@@ -195,6 +235,7 @@ The Hugging Face ist aktuell die zentrale Webplattform für frei zugängliche KI
 - "Trends": Foto von <a href="https://unsplash.com/de/@jacksloop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jack Sloop</a> auf <a href="https://unsplash.com/de/fotos/mann-klettert-tagsuber-auf-turm-in-der-nahe-von-gebauden-eYwn81sPkJ8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 - "Fazit und Ausblick": Photo by <a href="https://unsplash.com/@patrickperkins?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Perkins</a> on <a href="https://unsplash.com/photos/tower-viewer-mtqW8XxkDa8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 - "Sternenhimmel in Orange" auf "Kontakt", Foto von <a href="https://unsplash.com/de/@sid_suratia">Sid Suratia</a> auf <a href="https://unsplash.com/de/fotos/ZSmW-VJCz3Q">Unsplash</a>
+- "Commodore PET 2001 Series Personal Computer (1977)" auf "Anwendungen entwickeln" von Tomislav Medak from Flickr / Editing: Bill Bertram (Pixel8) - <https://www.flickr.com/photos/tomislavmedak/3803230853/>, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=7644700> collagiert von Axel Dürkop mit Screenshot von ChatGPT mit dem Prompt "Was ist Medienethik?" am 18.09.2023
 
 ## Nachnutzung
 
