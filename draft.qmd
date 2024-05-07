@@ -49,8 +49,8 @@ link-external-newwindow: true
 # Agenda
 
 - Problematisierung *Künstliche Intelligenz* und *Open-Source-KI*
-- Überblick über lernhaltige Open-Source-KI*-Anwendungen
-- Praktisches Beispiel (hands-on)
+- Überblick über lernhaltige Open-Source-KI-Anwendungen
+- Praktisches Beispiel
 - Reflexion, Diskussion und Entwicklung didaktischer Ideen
 
 # Etherpad
@@ -65,7 +65,7 @@ Sie finden ein Etherpad unter folgender Adresse:
 
 ![Methoden der KI [@kirsteEinleitungEntwicklungswegeZur2019, S. 22]](assets/img/kirste-entwicklung.png)
 
-# Open-Source-KI {background-color="#1c2d3f"}
+# Open-Source-KI  {background-image="./assets/img/eaters-collective-rS1GogPLVHk-unsplash.jpg"}
 Wie lernen Maschinen?
 
 ## (1) Daten sammeln
@@ -75,12 +75,12 @@ Wie lernen Maschinen?
 ![Quelle: Valentina Ivanova auf [Unsplash](https://unsplash.com/de/fotos/mkhohyHMhcc)](./assets/img/valentina-ivanova-mkhohyHMhcc-unsplash.jpg)
 :::
 ::: {.column width='65%'}
-- Die "Zutaten" für KI-Systeme sind **Big Data**
-- Daten stammen aus dem Internet sowie öffentlichen und privaten Datenpools
+- Die "Zutaten" für KI-Systeme sind **Big Data** (Bilder, Töne, Texte, Code etc.)
+- Daten stammen aus dem Web sowie öffentlichen und privaten Datenpools
 - bei der Auswahl von Daten ist auf Ausgewogenheit zu achten, um **bias** zu vermeiden
 - Die **Urheberrechtslage** ist komplex
-- **Datenschutzaspekte** können zu Buche schlagen
-- immer häufiger sind auch **Persönlichkeitsrechte** tangiert
+- **Datenschutzaspekte** sind zu berücksichtigen
+- **Persönlichkeitsrechte** sind tangiert
 :::
 ::::
 
@@ -113,8 +113,12 @@ Wie lernen Maschinen?
 
 :::: columns
 ::: {.column width='60%'}
-- Modelle werden in der Regel durch Schnittstellen für die Mensch-Maschine- oder Maschine-Maschine-Interaktion ergänzt
-  - Beispiel: GPT-3.5/4 ist das Modell, ChatGPT die Anwendung
+Modelle werden durch Interfaces für die Mensch-Maschine- oder Maschine-Maschine-Interaktion zugänglich.
+
+**Beispiel**
+
+- *Mistral Large* ist das **Modell**, Le Chat die **Anwendung**. 
+- Mistral_ und andere Anbieter verkaufen aber auch maschinellen Zugriff auf ihre Modelle über **Application Programming Interfaces (API)** für die Entwicklung eigener Anwendungen.
 :::
 
 ::: {.column width='40%'}
@@ -123,9 +127,9 @@ Wie lernen Maschinen?
 ::::
 
 
-## (5) Modelle evaluieren[^1]
+## (5) Modelle evaluieren[^5]
 
-[^1]: Der Begriff Evaluation als "Prüfung für den Einsatzzweck aus Sicht von Anwender\*innen" verstanden und von Validierung als "Prüfung der Performance aus Sicht von Entwickler\*innen" abgegrenzt.
+[^5]: Der Begriff Evaluation als "Prüfung für den Einsatzzweck aus Sicht von Anwender\*innen" verstanden und von Validierung als "Prüfung der Performance aus Sicht von Entwickler\*innen" abgegrenzt.
 
 :::: columns
 ::: {.column width='70%'}
@@ -145,12 +149,21 @@ Gibt es Open-Source-KI?
 ## KI-Systeme sind komplex
 
 - Open-Source-KI wird großes wirtschaftliches Potenzial zugeschrieben [@thebenChallengesLimitsOpen2021].
-- Anders als bei Open-Source-Software sind viele komplexe Komponenten an der Entwicklung von KI-Systemen beteiligt.
+- Wie gezeigt sind anders als bei Open-Source-Software viele komplexe Komponenten an der Entwicklung von KI-Systemen beteiligt.
 - **Zugang, Transparenz, Nachvollziehbarkeit und Nachnutzbarkeit** sind bisher noch nicht konsequent für alle Komponenten von "Open-Source-KI" gegeben [@gentTechIndustryCan2024].
 - Für **Bildungs- und Qualifikationsprozesse** bieten aktuelle Zugänge zu Daten und Software schon jetzt großes Potenzial.
 
 
-# KI verstehen mit Open-Source-Software {background-color="#1c2d3f"}
+# KI verstehen mit Open-Source-Software {background-color="#1c2d3f"} 
+
+## Vier Freiheiten
+
+Die vier Freiheiten, durch die Freie Software definiert wird [@freesoftwarefoundationinc.FreieSoftwareWas2019], sind für die Frage **Was kann KI in der Schule?** leitend:
+
+- "Die Freiheit, das Programm auszuführen wie man möchte, für jeden Zweck (Freiheit 0).
+- **Die Freiheit, die Funktionsweise des Programms zu untersuchen und eigenen Datenverarbeitungbedürfnissen anzupassen** (Freiheit 1). Der Zugang zum Quellcode ist dafür Voraussetzung.
+- Die Freiheit, das Programm zu redistribuieren und damit Mitmenschen zu helfen (Freiheit 2).
+- Die Freiheit, das Programm zu verbessern und diese Verbesserungen der Öffentlichkeit freizugeben, damit die gesamte Gesellschaft davon profitiert (Freiheit 3). Der Zugang zum Quellcode ist dafür Voraussetzung. [Hervorh. von A.D.]"
 
 ## Eine Auswahl
 
@@ -255,6 +268,10 @@ The Hugging Face ist aktuell die zentrale Webplattform für frei zugängliche KI
 - Verbindung von Teachable Machine mit Gradio
 - Analyse der Anwendung und Vergleich mit den "Großen"
 
+## Virtuelle Maschine
+
+- Unter <https://github.com> können Sie eine virtuelle Maschine für [VirtualBox](https://www.virtualbox.org/) herunterladen.
+
 # Kontakt {background-image="./assets/img/sid-suratia-ZSmW-VJCz3Q-unsplash_.jpg"}
 
 > <https://axel-duerkop.de>\
@@ -265,11 +282,7 @@ The Hugging Face ist aktuell die zentrale Webplattform für frei zugängliche KI
 
 - "Titel Sternenhimmel": Foto von <a href="https://unsplash.com/de/@grakozy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Greg Rakozy</a> auf <a href="https://unsplash.com/de/fotos/silhouettenfotografie-der-person-oMpAz-DN-9I?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 - "Dart": Foto von <a href="https://unsplash.com/de/@jrarce?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ricardo Arce</a> auf <a href="https://unsplash.com/de/fotos/selektive-fokusfotografie-eines-pfeils-cY_TCKr5bek?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- "Nebula Head" auf "Was ist KI?": DALL-E 2, " artificial intelligence in the implosion of a nebula, watercolor, dark background"
-- "Entwicklungsprozesse von KI-Systemen": Photo by <a href="https://unsplash.com/@eaterscollective?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eaters Collective</a> on <a href="https://unsplash.com/photos/four-macarons-balancing-near-two-and-one-macarons-rS1GogPLVHk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- "Generative KI-Systeme": Photo by <a href="https://unsplash.com/@mikepetrucci?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mike Petrucci</a> on <a href="https://unsplash.com/photos/mixed-paints-in-a-plate-f6Xv0xs9JWg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- "Trends": Foto von <a href="https://unsplash.com/de/@jacksloop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jack Sloop</a> auf <a href="https://unsplash.com/de/fotos/mann-klettert-tagsuber-auf-turm-in-der-nahe-von-gebauden-eYwn81sPkJ8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-- "Fazit und Ausblick": Photo by <a href="https://unsplash.com/@patrickperkins?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Patrick Perkins</a> on <a href="https://unsplash.com/photos/tower-viewer-mtqW8XxkDa8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+- "Open-Source-KI": Photo by <a href="https://unsplash.com/@eaterscollective?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Eaters Collective</a> on <a href="https://unsplash.com/photos/four-macarons-balancing-near-two-and-one-macarons-rS1GogPLVHk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 - "Sternenhimmel in Orange" auf "Kontakt", Foto von <a href="https://unsplash.com/de/@sid_suratia">Sid Suratia</a> auf <a href="https://unsplash.com/de/fotos/ZSmW-VJCz3Q">Unsplash</a>
 - "Commodore PET 2001 Series Personal Computer (1977)" auf "Anwendungen entwickeln" von Tomislav Medak from Flickr / Editing: Bill Bertram (Pixel8) - <https://www.flickr.com/photos/tomislavmedak/3803230853/>, CC BY-SA 3.0, <https://commons.wikimedia.org/w/index.php?curid=7644700> collagiert von Axel Dürkop mit Screenshot von ChatGPT mit dem Prompt "Was ist Medienethik?" am 18.09.2023
 
@@ -281,4 +294,6 @@ Dieses Werk ist lizenziert unter einer **Creative Commons Namensnennung - Weiter
 
 Die Bedingungen der Creative-Commons-Lizenz gelten nur für Originalmaterial. Die Wiederverwendung von Material aus anderen Quellen (gekennzeichnet mit Quellenangabe oder Erwähnung in den Mediennachweisen) wie z.B. Schaubilder, Abbildungen, Fotos und Textauszüge erfordert ggf. weitere Nutzungsgenehmigungen durch den jeweiligen Rechteinhaber.
 
+## Acknowledgments {.appendix}
 
+Der Workshop, für den dieser Foliensatz zusammengestellt wurde, fand am 7. Mai 2024 im DIGILAB MZ Harburg statt. Die Entwicklung der Veranstaltung wurde finanziert durch das Niedersächsische Landesinstitut für schulische Qualitätsentwicklung (NLQ).
