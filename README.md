@@ -26,4 +26,6 @@ Alles Weitere ist [der Dokumentation von Quarto zu Präsenationen mit RevealJS](
 
 Die Bedingungen der Creative-Commons-Lizenz gelten nur für Originalmaterial. Die Wiederverwendung von Material aus anderen Quellen (gekennzeichnet mit Quellenangabe oder Erwähnung in den Mediennachweisen) wie z.B. Schaubilder, Abbildungen, Fotos und Textauszüge erfordert ggf. weitere Nutzungsgenehmigungen durch den jeweiligen Rechteinhaber.
 
+## Acknowledgments {.appendix}
 
+Der Workshop, für den dieser Foliensatz zusammengestellt wurde, fand am 7. Mai 2024 im DIGILAB MZ Harburg statt. Die Entwicklung der Veranstaltung wurde finanziert durch das Niedersächsische Landesinstitut für schulische Qualitätsentwicklung (NLQ).
