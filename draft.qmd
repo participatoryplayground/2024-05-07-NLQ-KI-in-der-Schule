@@ -61,12 +61,13 @@ Sie finden ein Etherpad unter folgender Adresse:
 
 <https://m1z.eu/kischule1>
 
+<hr style="margin-top: 40px"/>
 
 ### Trainingsdaten und Notebook
 
 Sie finden Dateien zum heutigen Workshop unter
 
-<https://>
+<https://github.com/participatoryplayground/hands-on>
 
 # Künstliche Intelligenz {background-color="#1c2d3f"}
 
@@ -273,7 +274,7 @@ The Hugging Face ist aktuell die zentrale Webplattform für frei zugängliche KI
 - funktioniert gut mit Hugging Face zusammen
 - sehr gut dokumentiert und mit Beispielen und Demos versehen
 
-**Wir bauen ein Interface für die Unterscheidung von Hunden und Katzen.**
+**Beispiel: Ein Interface für die Unterscheidung von Hunden und Katzen.**
 
 - Verbindung von Teachable Machine mit Gradio
 - Analyse der Anwendung und Vergleich mit den "Großen"
